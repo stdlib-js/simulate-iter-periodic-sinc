@@ -1,0 +1,38 @@
+{
+  "name": "@stdlib/simulate-iter-periodic-sinc",
+  "version": "0.0.0",
+  "description": "Create an iterator which generates a periodic sinc waveform.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/simulate-iter-periodic-sinc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "simulate",
+    "simulation",
+    "sinc",
+    "cardinal",
+    "sine",
+    "dirichlet",
+    "diric",
+    "wave",
+    "signal",
+    "processing",
+    "waveform",
+    "periodic",
+    "iterator",
+    "iterate",
+    "iteration",
+    "iter"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
