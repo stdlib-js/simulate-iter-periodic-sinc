@@ -32,10 +32,14 @@ The periodic [sinc][@stdlib/math/base/special/sinc] function, also known as the 
 
 <!-- <equation class="equation" label="eq:periodic_sinc" align="center" raw="D_N(x; A) = \begin{cases}\frac{A\sin(Nx/2)} {N\sin(x/2)} & x \neq 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} & x = 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}" alt="Periodic sinc function."> -->
 
-<div class="equation" align="center" data-raw-text="D_N(x; A) = \begin{cases}\frac{A\sin(Nx/2)} {N\sin(x/2)} &amp; x \neq 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} &amp; x = 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}" data-equation="eq:periodic_sinc">
+```math
+D_N(x; A) = \begin{cases}\frac{A\sin(Nx/2)} {N\sin(x/2)} & x \neq 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} & x = 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="D_N(x; A) = \begin{cases}\frac{A\sin(Nx/2)} {N\sin(x/2)} &amp; x \neq 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} &amp; x = 2\pi k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}" data-equation="eq:periodic_sinc">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d985bb501380970d8c79ffba20ce15965a7acfa9/lib/node_modules/@stdlib/simulate/iter/periodic-sinc/docs/img/equation_periodic_sinc.svg" alt="Periodic sinc function.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -45,10 +49,14 @@ To express the periodic [sinc][@stdlib/math/base/special/sinc] function as a fun
 
 <!-- <equation class="equation" label="eq:periodic_sinc_substitution_odd" align="center" raw="x = \frac{2\pi (t-\varphi)}{\tau}" alt="Periodic sinc function substitution for odd N."> -->
 
-<div class="equation" align="center" data-raw-text="x = \frac{2\pi (t-\varphi)}{\tau}" data-equation="eq:periodic_sinc_substitution_odd">
+```math
+x = \frac{2\pi (t-\varphi)}{\tau}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="x = \frac{2\pi (t-\varphi)}{\tau}" data-equation="eq:periodic_sinc_substitution_odd">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d985bb501380970d8c79ffba20ce15965a7acfa9/lib/node_modules/@stdlib/simulate/iter/periodic-sinc/docs/img/equation_periodic_sinc_substitution_odd.svg" alt="Periodic sinc function substitution for odd N.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -56,10 +64,14 @@ and, for even `N`, let
 
 <!-- <equation class="equation" label="eq:periodic_sinc_substitution_even" align="center" raw="x = \frac{4\pi (t-\varphi)}{\tau}" alt="Periodic sinc function substitution for even N."> -->
 
-<div class="equation" align="center" data-raw-text="x = \frac{4\pi (t-\varphi)}{\tau}" data-equation="eq:periodic_sinc_substitution_even">
+```math
+x = \frac{4\pi (t-\varphi)}{\tau}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="x = \frac{4\pi (t-\varphi)}{\tau}" data-equation="eq:periodic_sinc_substitution_even">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d985bb501380970d8c79ffba20ce15965a7acfa9/lib/node_modules/@stdlib/simulate/iter/periodic-sinc/docs/img/equation_periodic_sinc_substitution_even.svg" alt="Periodic sinc function substitution for even N.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -67,10 +79,14 @@ where `τ` is the period (i.e., the number of iterations until a waveform repeat
 
 <!-- <equation class="equation" label="eq:periodic_sinc_in_terms_of_period" align="center" raw="D_N(t; A, \tau, \varphi) = \begin{cases}\frac{A\sin(N\pi(t-\varphi)/\tau)} {N\sin(\pi (t-\varphi)/\tau)} & t-\varphi \neq \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} & t-\varphi = \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}" alt="Periodic sinc function as a function of the waveform period."> -->
 
-<div class="equation" align="center" data-raw-text="D_N(t; A, \tau, \varphi) = \begin{cases}\frac{A\sin(N\pi(t-\varphi)/\tau)} {N\sin(\pi (t-\varphi)/\tau)} &amp; t-\varphi \neq \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} &amp; t-\varphi = \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}" data-equation="eq:periodic_sinc_in_terms_of_period">
+```math
+D_N(t; A, \tau, \varphi) = \begin{cases}\frac{A\sin(N\pi(t-\varphi)/\tau)} {N\sin(\pi (t-\varphi)/\tau)} & t-\varphi \neq \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} & t-\varphi = \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="D_N(t; A, \tau, \varphi) = \begin{cases}\frac{A\sin(N\pi(t-\varphi)/\tau)} {N\sin(\pi (t-\varphi)/\tau)} &amp; t-\varphi \neq \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots  \\ A (-1)^{k(N-1)} &amp; t-\varphi = \tau k\ \textrm{for}\ k = 0, \pm 1, \pm 2, \ldots \end{cases}" data-equation="eq:periodic_sinc_in_terms_of_period">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d985bb501380970d8c79ffba20ce15965a7acfa9/lib/node_modules/@stdlib/simulate/iter/periodic-sinc/docs/img/equation_periodic_sinc_in_terms_of_period.svg" alt="Periodic sinc function as a function of the waveform period.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -80,10 +96,14 @@ Note that the periodic [sinc][@stdlib/math/base/special/sinc] can be equivalentl
 
 <!-- <equation class="equation" label="eq:periodic_sinc_in_terms_of_sinc_function" align="center" raw="D_N(\pi x; N, A) = A \cdot \frac{\operatorname{sinc}(Nx/2)} {\operatorname{sinc}(x/2)}" alt="Periodic sinc function in terms of the sinc function."> -->
 
-<div class="equation" align="center" data-raw-text="D_N(\pi x; N, A) = A \cdot \frac{\operatorname{sinc}(Nx/2)} {\operatorname{sinc}(x/2)}" data-equation="eq:periodic_sinc_in_terms_of_sinc_function">
+```math
+D_N(\pi x; N, A) = A \cdot \frac{\operatorname{sinc}(Nx/2)} {\operatorname{sinc}(x/2)}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="D_N(\pi x; N, A) = A \cdot \frac{\operatorname{sinc}(Nx/2)} {\operatorname{sinc}(x/2)}" data-equation="eq:periodic_sinc_in_terms_of_sinc_function">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d985bb501380970d8c79ffba20ce15965a7acfa9/lib/node_modules/@stdlib/simulate/iter/periodic-sinc/docs/img/equation_periodic_sinc_in_terms_of_sinc_function.svg" alt="Periodic sinc function in terms of the sinc function.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -298,7 +318,7 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/simulate/iter/sine-wave`][@stdlib/simulate/iter/sine-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sine wave.</span>
+-   <span class="package-name">[`@stdlib/simulate-iter/sine-wave`][@stdlib/simulate/iter/sine-wave]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sine wave.</span>
 
 </section>
 
@@ -357,7 +377,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
