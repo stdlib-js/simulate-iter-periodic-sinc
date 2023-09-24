@@ -133,7 +133,7 @@ D_N(\pi x; N, A) = A \cdot \frac{\mathop{\mathrm{sinc}}(Nx/2)} {\mathop{\mathrm{
 ## Usage
 
 ```javascript
-import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@esm/index.mjs';
+import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@v0.1.0-esm/index.mjs';
 ```
 
 #### iterPeriodicSinc( n\[, options] )
@@ -276,7 +276,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@esm/index.mjs';
+import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@v0.1.0-esm/index.mjs';
 
 // Create an iterator:
 var opts = {
