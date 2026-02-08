@@ -133,6 +133,11 @@ D_N(\pi x; N, A) = A \cdot \frac{\mathop{\mathrm{sinc}}(Nx/2)} {\mathop{\mathrm{
 ## Usage
 
 ```javascript
+import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/simulate-iter-periodic-sinc/tags). For example,
+
+```javascript
 import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@v0.2.3-deno/mod.js';
 ```
 
@@ -271,7 +276,7 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@v0.2.3-deno/mod.js';
+import iterPeriodicSinc from 'https://cdn.jsdelivr.net/gh/stdlib-js/simulate-iter-periodic-sinc@deno/mod.js';
 
 // Create an iterator:
 var opts = {
