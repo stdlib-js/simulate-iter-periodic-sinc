@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-21)
+## Unreleased (2026-10-02)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`8ff7dce`](https://github.com/stdlib-js/stdlib/commit/8ff7dced7180f7d743c660b578f0bc7c53e84f6a) - **test:** migrate `simulate/iter/periodic-sinc` to ULP-based assertions [(#15819)](https://github.com/stdlib-js/stdlib/pull/15819) _(by Athan Reines)_
 -   [`e997446`](https://github.com/stdlib-js/stdlib/commit/e997446d98bf546c0220bad7a7f11b63c6944e35) - **bench:** refactor to use string interpolation in `simulate` [(#11591)](https://github.com/stdlib-js/stdlib/pull/11591) _(by Karan Anand)_
 
 </details>
@@ -24,8 +25,9 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Karan Anand
 
 </section>
